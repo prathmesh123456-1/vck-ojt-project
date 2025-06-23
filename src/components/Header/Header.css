@@ -1,0 +1,44 @@
+.header {
+  width: 1300px;
+  background-color: #007bff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+  position: sticky;
+  margin-left:0px;
+  
+}
+
+
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+.apply-now {
+  background-color: #28a745;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  border: 3px solid black;
+}
+
+.apply-now:hover {
+  background-color: #218838;
+}
