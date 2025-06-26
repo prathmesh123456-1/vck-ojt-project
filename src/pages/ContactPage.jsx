@@ -1,13 +1,13 @@
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const ContactPage = () => {
   return(
     <div className="container">
-      <div className="body">
-        <div className="A">
+            <main className="main-content"> 
 
-    <Header/>
-    <h1 id="contact">Contact Us</h1>
+    <Header/><br></br>
+    <h1 id="contact"><u>Contact Us</u></h1>
     <p>We'd love to hear from you! Whether you have questions about admissions, programs, or campus life, our team is here to help.</p>
     <h2>General Enquiries</h2><hr></hr>
       <p><b>Vivekanand College Main Campus</b></p>
@@ -25,12 +25,12 @@ India</p>
       <p>Phone: +91 87654 32109</p>
       <p>Email: studentsupport@vivekanandcollege.edu</p>
       <h2>Find Us on the Map</h2><hr></hr>
-      <p><u>View on Google Maps</u></p>
+      <a href="https://maps.google.com/?q=Vivekanand+College" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
       <h2>Send Us a Message</h2><hr></hr>
       <p>[A contact form with fields for Name, Email, Subject, Message can be added here.]</p>
-
-</div>
- </div>
+ 
+    </main>
+     <Footer/>
  </div>
   )
 }

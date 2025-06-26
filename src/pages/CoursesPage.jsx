@@ -1,12 +1,12 @@
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const CoursesPage = () => {
   return(
     <div className="container">
-      <div className="body">
-      <div className="A">
+           <main className="main-content">
         <Header/>
-        <h1 id="our">Our Academic Programs</h1>
+        <h1 id="our"><u>Our Academic Programs</u></h1>
         <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p><br></br>
         <h2>Discover Campus Life</h2>
         <video className="college"src="/videos/college.mp4" controls/>
@@ -82,10 +82,12 @@ const CoursesPage = () => {
     <h2>Specialized & Vocational Courses</h2><hr></hr>
       <p>In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.</p>
       <p>Have questions about a specific course?</p>
-      <button class="in">Inquire About Courses</button>
-
-</div>    
-</div>
+       <a href="/contact">
+         <button className="in">"Inquire About Courses"</button>
+         </a>
+      
+</main>
+<Footer/>
 </div>
   )
 }

@@ -1,17 +1,39 @@
+
+
+import { useState } from "react";
 import Header from "../components/Header/Header";
+import Popup from "./Popup";
+import Footer from "../components/Footer/Footer";
+
 
 const HomePage = () => {
-  return(
-    <div className="container">
-      <div className="body">
-        <div className="A">
+  const [showPopup,setShowPopup]=useState(true);
 
-        <Header/>
-        <h1 id="welcome"><u>Welcome to Vivekanand College!</u></h1><br></br>
-        <img className="vck"src="/images/vck.png"/>
-        <p>Your journey to excellence starts hear</p>
-        <button id="apply">Apply Now</button>
-        <p><b>Vivekanand Colleg</b> is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in 1980, we have proudly served generations of students, empowering them to achieve their full potential.</p>
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+  return(
+    <div className="homepage">
+      {showPopup && <Popup onClose={handleClosePopup} />}
+
+     
+
+    <div className="container">
+       <Header/>
+       <div className="main-content">
+  <div id="home-head">
+    
+       <div className="hero-cont">
+         <h2 id="headline">Welcome to Vivekanand College!</h2>
+        
+        <p id="journey-start">Your journey to excellence starts hear.</p>
+        <a href="/apply">
+        <button id="apply" >apply</button>
+        </a>
+       </div>
+        </div>
+        <h2 id="well">Welcome to our College Page</h2>
+        <p><b>Vivekanand College</b> is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in 1980, we have proudly served generations of students, empowering them to achieve their full potential.</p>
         <p>At Vivekanand College, we believe in a vibrant learning environment that extends beyond textbooks. Our state-of-the-art facilities, experienced faculty, and diverse student community create a unique ecosystem where curiosity thrives and future leaders are shaped.</p>
         <h2>Why Choose Vivekanand college?</h2><hr></hr>
         <ul type="square">
@@ -27,11 +49,13 @@ const HomePage = () => {
         <img className="campus"src="/images/campus.jpg"/>
         <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
     <p>Ready to explore our courses?</p>
+    <a href="/courses">
     <button id="explore">Explore Courses</button>
+      </a>
+      </div>
     </div>
+    <Footer/>
     </div>
-    </div>
-    
   )
 }
 export default HomePage;

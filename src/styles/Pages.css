@@ -1,99 +1,243 @@
-
-  
-#about{
-color:black;
-
-
-height: 100px;
-
-
-}
-#apply {
-border:3px solid black;
-background:green;
-height: 50px;
-margin-left: 5px;
-}
-.campus{
-    border:5px solid gray;
-    width: 1000px;
-    margin-left: 5px;
-
-    
-}
-.vck{
-
-    border:5px solid gray;
-    width:1000px;
-    height: 250px;
-    margin-right: 5px;
-    
-}
-.student{
-    border:5px solid grey;
-    width: 1000px;
-    height: 500px;
-    margin-left: 5px;
-    
-}
-#explore {
-border: 3px solid black;
-background-color: goldenrod;
-height: 50px;
-margin-bottom: 5px;
-margin-left: 5px;
-}
-#our{
-color: white;
-height: 50px;
-
-
-}
-.in{
-border:5px solid black;
-background:goldenrod;
-}
-#contact{
-border:5px solid black;
-color:navy;
-background-color:grey;
-height: 50px;
-
-}
-div{
-
-background-color:white;
-
-}
-.college{
-width:800px ;
-height: 450px;
-border:5px solid black;
-margin-left: 5px;
-}
-.body{
-    background-color: aqua;
-    margin-top: 0%;
-    
-}
-
-  
-
-.Container {
- min-width: 500px;
- max-width: 1000px;
- margin-top: 30px;
- background-color: white;
-}
-#welcome{
+#about {
+    color: orangered;
+    margin-top: 50px;
+    height: 100px;
     margin-left: 200px;
-    color:orangered;
 }
-.A{
-  min-width: 500px;
- max-width: 1000px;
- margin-top: 30px;
- background-color: white;
- margin-left: 200px;  
- margin-top: 50px;
+
+#apply {
+    border: 3px solid black;
+    background: green;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.campus {
+    border: 5px solid gray;
+    width: 700px;
+    height: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.student {
+    border: 5px solid grey;
+    width: 700px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#explore {
+    border: 3px solid black;
+    background-color: goldenrod;
+    height: 50px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#our {
+
+    height: 50px;
+    margin-left: 200px;
+    color: orangered;
+    margin-top: 50px;
+}
+
+
+
+#contact {
+
+    height: 50px;
+    height: 50px;
+    margin-left: 200px;
+    color: orangered;
+    margin-top: 50px;
+
+}
+
+
+
+.college {
+    width: 800px;
+    height: 450px;
+    border: 5px solid black;
+    margin-left: 5px;
+}
+
+.container {
+    min-width: 500px;
+    max-width: 1000px;
+    max-height: 500px;
+    margin-top: 30px;
+
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#welcome {
+    margin-left: 200px;
+    color: orangered;
+    margin-top: 50px;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 500px;
+    min-height: 250px;
+    max-height: 600px;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: scroll;
+    padding: 3 rem;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+
+}
+
+body {
+    background-color: aqua;
+    align-items: center;
+    
+}
+
+.in {
+    background-color: green;
+    border: 3px solid black;
+}
+
+#home-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+   background: url(./public/images/vck.png) center/cover no-repeat ;
+    background-size:99% ;
+  
+    position: relative;
+    object-fit: cover;
+    color: aliceblue;
+    margin: 1px auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.hero-cont{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: wheat;
+    
+}
+#well{
+
+    color: blue;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box {
+  position: relative;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.popup-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.popup-name {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.popup-credit {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.popup-note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
+.popup-gotit {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.4rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+}
+.main-content{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 500px;
+    min-height: 250px;
+    max-height: 600px;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: scroll;
+    padding: 3 rem;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+
 }
