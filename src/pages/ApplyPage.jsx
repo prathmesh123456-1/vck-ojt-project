@@ -47,9 +47,6 @@ const ApplyPage =()=>{
             <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee structures, please visit our <a href="/courses">Courses page</a> or <a href="/contact">Contact us</a> directly.</p>
 
           </div>
-
-        
-
         <Footer/>
 
       </div>

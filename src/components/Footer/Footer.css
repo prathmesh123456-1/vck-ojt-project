@@ -3,8 +3,7 @@
     height: 20px;
     position: fixed;
     bottom: 0;
-   
-   align-items: center;
+    align-items: center;
    justify-content: center;
    bottom: 0;
    height: 50px;
@@ -12,4 +11,4 @@
    color: white;
    text-align: center;
    margin-left: 0;
-    }
+}

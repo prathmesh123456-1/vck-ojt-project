@@ -2,34 +2,26 @@
 
 import { useState } from "react";
 import Header from "../components/Header/Header";
-import Popup from "./Popup";
+
 import Footer from "../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 
 const HomePage = () => {
-  const [showPopup,setShowPopup]=useState(true);
-
-  const handleClosePopup = () => {
-    setShowPopup(false);
-  };
-  return(
-    <div className="homepage">
-      {showPopup && <Popup onClose={handleClosePopup} />}
-
-     
-
-    <div className="container">
+   return(
+    
+      <div className="container">
        <Header/>
        <div className="main-content">
   <div id="home-head">
     
        <div className="hero-cont">
-         <h2 id="headline">Welcome to Vivekanand College!</h2>
         
-        <p id="journey-start">Your journey to excellence starts hear.</p>
-        <a href="/apply">
-        <button id="apply" >apply</button>
-        </a>
+           <h2 id="headline">Welcome to Vivekanand College!</h2>
+        
+        <p>Your journey to excellence starts hear.</p>
+        <Link to="/apply" id="apply">Apply Now!</Link>
+       
        </div>
         </div>
         <h2 id="well">Welcome to our College Page</h2>
@@ -49,13 +41,12 @@ const HomePage = () => {
         <img className="campus"src="/images/campus.jpg"/>
         <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
     <p>Ready to explore our courses?</p>
-    <a href="/courses">
-    <button id="explore">Explore Courses</button>
-      </a>
+    <Link to="/Courses" id="explore">Explore Courses</Link>
       </div>
-    </div>
+    
     <Footer/>
     </div>
+  
   )
 }
 export default HomePage;
