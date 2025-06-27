@@ -120,7 +120,7 @@ body {
     height: 200px;
     width: 100%;
     border-radius: 5px 0 0 5px;
-   background: url("images/vck.png") center/cover no-repeat ;
+   background: url(/images/vck.png) center/cover no-repeat ;
     background-size:cover;
     color: aliceblue;
     margin: 1px auto;
